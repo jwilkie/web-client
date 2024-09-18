@@ -1,0 +1,37 @@
+.box-example, .box-example-border {
+    position: relative;
+    padding: 2rem;
+}
+
+.box-example {
+    max-width: 25rem;
+    margin: 0 auto;
+    background-color: #edb68c;
+    text-align: center;
+}
+    
+.box-example-tag.top {
+    top: .5rem;
+}
+
+.box-example-tag {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+    
+.box-example-border {
+    border: 5px solid #eddd8c;
+    background-color: #95cf9c;
+}
+    
+.box-example-content {
+    padding: .25rem;
+    background-color: #eee;
+}
+    
+.box-example-tag.bottom {
+    background-color: #eddd8c;
+    padding: 0 .5em;
+    bottom: -.8em;
+}
