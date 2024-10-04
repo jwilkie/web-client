@@ -109,7 +109,7 @@ export default function Page() {
         <section>
             <h2>Fusionner les bordures</h2>
             <p>
-                Si nous ajoutons des bordures aux cellules d'un tableau, nous verrons que chaque cellule aura sa propre bordure. 
+                Si nous ajoutons des bordures aux cellules d&apos;un tableau, nous verrons que chaque cellule aura sa propre bordure. 
                 Dans plusieurs cas, on voudra fusionner ces bordures pour empêcher un dédoublement des bordures entre les 
                 cellules. Pour ce faire, nous utiliserons la propriété <IC>border-collapse</IC>.
             </p>
@@ -127,14 +127,14 @@ export default function Page() {
         <section>
             <h2>Espacement</h2>
             <p>
-                Les cellules <IC>&lt;td&gt;</IC> et <IC>&lt;th&gt;</IC> ne fonctionne pas de la même façon qu'un élément 
-                régulier dans une page web. En effet, la propriété <IC>margin</IC> n'a aucun effet sur eux. Si vous voulez 
-                mettre de l'espacement entre les cellules d'un tableau, vous devez plutôt utiliser la 
+                Les cellules <IC>&lt;td&gt;</IC> et <IC>&lt;th&gt;</IC> ne fonctionne pas de la même façon qu&apos;un élément 
+                régulier dans une page web. En effet, la propriété <IC>margin</IC> n&apos;a aucun effet sur eux. Si vous voulez 
+                mettre de l&apos;espacement entre les cellules d&apos;un tableau, vous devez plutôt utiliser la 
                 propriété <IC>border-spacing</IC>.
             </p>
             <p>
-                Cette propriété peut s'utiliser avec une valeur pour définir l'espacement de tous les côtés ou avec deux valeurs 
-                pour définir l'espacement gauche/droite et l'espacement haut/bas séparément. On l'utilise de la façon suivante:
+                Cette propriété peut s&apos;utiliser avec une valeur pour définir l&apos;espacement de tous les côtés ou avec deux valeurs 
+                pour définir l&apos;espacement gauche/droite et l&apos;espacement haut/bas séparément. On l&apos;utilise de la façon suivante:
             </p>
             <WebExample>
                 <Code language="html">{spacingHtml}</Code>
@@ -143,7 +143,7 @@ export default function Page() {
             </WebExample>
             <ColoredBox title="À noter">
                 Bien que le margin ne fonctionne pas dans un tableau, le padding, lui, est disponible. Bref, si vous voulez 
-                mettre de l'espacement à l'intérieur d'une cellule, vous pouvez le faire avec la propriété <IC>padding</IC>.
+                mettre de l&apos;espacement à l&apos;intérieur d&apos;une cellule, vous pouvez le faire avec la propriété <IC>padding</IC>.
             </ColoredBox>
             <ColoredBox title="Attention">
                 La propriété <IC>border-spacing</IC> peut uniquement fonctionner si les bordures du tableau sont séparé. Bref, 
@@ -155,14 +155,14 @@ export default function Page() {
         <section>
             <h2>Position du titre</h2>
             <p>
-                Le titre ou la légende d'un tableau se retrouve dans la balise <IC>&lt;caption&gt;</IC>. Cette balise doit 
-                toujours être la première dans un <IC>&lt;table&gt;</IC> si elle est présente et s'affiche toujours en haut du 
-                tableau par défaut. Il est toutefois possible de déplacer ce titre en dessous du tableau à l'aide de la 
+                Le titre ou la légende d&apos;un tableau se retrouve dans la balise <IC>&lt;caption&gt;</IC>. Cette balise doit 
+                toujours être la première dans un <IC>&lt;table&gt;</IC> si elle est présente et s&apos;affiche toujours en haut du 
+                tableau par défaut. Il est toutefois possible de déplacer ce titre en dessous du tableau à l&apos;aide de la 
                 propriété <IC>caption-side</IC>.
             </p>
             <p>
                 Cette propriété accepte seulement 2 valeurs différentes, soit <IC>top</IC> (valeur par défaut) 
-                ou <IC>bottom</IC>. Voici comment l'utiliser:
+                ou <IC>bottom</IC>. Voici comment l&apos;utiliser:
             </p>
             <WebExample>
                 <Code language="html">{captionHtml}</Code>

@@ -165,7 +165,7 @@ export default function Page() {
             <h2>Alignement du texte</h2>
             <p>
                 Par défaut, dans le navigateur web, le texte est aligné à la gauche. Nous pouvons changer ce comportement à 
-                l'aide de la propriété <IC>text-align</IC>. Cette propriété accepte les valeurs <IC>left</IC>, <IC>right</IC>, <IC>center</IC> et <IC>justify</IC>.
+                l&apos;aide de la propriété <IC>text-align</IC>. Cette propriété accepte les valeurs <IC>left</IC>, <IC>right</IC>, <IC>center</IC> et <IC>justify</IC>.
             </p>
             <WebExample>
                 <Code language="html">{alignHtml}</Code>
@@ -173,18 +173,18 @@ export default function Page() {
             </WebExample>
             <ColoredBox title="À noter">
                 Cette propriété doit se mettre sur le conteneur du texte et ce conteneur doit avoir un affichage 
-                en <IC>block</IC>. Si ces conditions ne sont pas respecté, l'alignement a de forte chance de ne pas fonctionner.
+                en <IC>block</IC>. Si ces conditions ne sont pas respecté, l&apos;alignement a de forte chance de ne pas fonctionner.
             </ColoredBox>
         </section>
 
         <section>
             <h2>Taille du texte</h2>
             <p>
-                Pour changer la taille du texte, c'est la propriété <IC>font-size</IC> que nous utiliserons. Cette propriété 
-                nécessite une taille que l'on spécifiera généralement en <IC>rem</IC>.
+                Pour changer la taille du texte, c&apos;est la propriété <IC>font-size</IC> que nous utiliserons. Cette propriété 
+                nécessite une taille que l&apos;on spécifiera généralement en <IC>rem</IC>.
             </p>
             <p>
-                Voici comment l'utiliser:
+                Voici comment l&apos;utiliser:
             </p>
             <WebExample>
                 <Code language="html">{sizeHtml}</Code>
@@ -195,10 +195,10 @@ export default function Page() {
         <section>
             <h2>Poids du texte</h2>
             <p>
-                Le poids du texte est un concept particulier. En gros, cela indique si le texte est en gras ou non. C'est 
-                toutefois un peu plus complexe. Le poid du texte varie entre les valeurs de 100 jusqu'à 900. Un texte normal 
+                Le poids du texte est un concept particulier. En gros, cela indique si le texte est en gras ou non. C&apos;est 
+                toutefois un peu plus complexe. Le poid du texte varie entre les valeurs de 100 jusqu&apos;à 900. Un texte normal 
                 est écrit dans un poids de 400 et un texte en gras dans un poids de 700. Certaines polices de caractères 
-                permettent d'avoir des poids plus grand pour un texte encore plus en gras ou des valeurs plus petites pour un 
+                permettent d&apos;avoir des poids plus grand pour un texte encore plus en gras ou des valeurs plus petites pour un 
                 texte plus mince que le normal.
             </p>
             <p>
@@ -224,10 +224,10 @@ export default function Page() {
             </WebExample>
             <ColoredBox title="À noter: ">
                 En règle général, les artiste graphique préfèreront que vous utilisiez la valeur <IC>italic</IC> puisque 
-                celle-ci préserve la belle structure d'une police de caractère. Toutefois, cette approche nécessite généralement 
+                celle-ci préserve la belle structure d&apos;une police de caractère. Toutefois, cette approche nécessite généralement 
                 plus de chargement au démarrage de la page web, ce qui peut causer des problèmes sur les pages plus lourde. Dans 
-                ce genre de cas, la valeur <IC>oblique</IC> est une meilleure solution puisqu'elle calcule l'angle du texte 
-                mathématiquement à l'affichage de la page, ce qui est étonnement souvent plus rapide.
+                ce genre de cas, la valeur <IC>oblique</IC> est une meilleure solution puisqu&apos;elle calcule l&apos;angle du texte 
+                mathématiquement à l&apos;affichage de la page, ce qui est étonnement souvent plus rapide.
             </ColoredBox>
         </section>
         
@@ -247,7 +247,7 @@ export default function Page() {
                 <Code language="css">{decorationCss}</Code>
             </WebExample>
             <p>
-                Comme vous pouvez le voir dans l'exemple ci-dessus, il n'est pas obligatoire de spécifier chaque valeur de la 
+                Comme vous pouvez le voir dans l&apos;exemple ci-dessus, il n&apos;est pas obligatoire de spécifier chaque valeur de la 
                 décoration. Il est possible de simplement spécifier la position du trait ou encore simplement la position et la 
                 couleur.
             </p>
@@ -291,7 +291,7 @@ export default function Page() {
         <section>
             <h2>Transformation du texte</h2>
             <p>
-                En CSS, on parlera de transformation du texte lorsque l'on change partiellement ou complètement la casse du 
+                En CSS, on parlera de transformation du texte lorsque l&apos;on change partiellement ou complètement la casse du 
                 texte. Bref, si on désire forcer le texte en maujuscule ou en minuscule avec le CSS, nous utiliserons la 
                 propriété <IC>text-transform</IC>.
             </p>
@@ -320,7 +320,7 @@ export default function Page() {
                 La police de caractère est le style graphique dans lequel votre texte est affiché. On utilise la 
                 propriété <IC>font‑family</IC> pour définir une liste prioritaire de polices de caractères que nous voulons 
                 utiliser. Il est important de définir des familles de polices plus générique dans votre liste de priorités pour 
-                ainsi avoir une autre police pour l'affichage si votre police la plus prioritaire ne fonctionne pas.
+                ainsi avoir une autre police pour l&apos;affichage si votre police la plus prioritaire ne fonctionne pas.
             </p>
             <p>
                 Voici une liste des polices génériques disponible dans les navigateurs Web. Vous devez toujours en mettre une comme 
@@ -359,14 +359,14 @@ export default function Page() {
                 </table>
             </OverflowContainer>
             <ColoredBox title="Attention">
-                Les polices de caractères varient énormément entre les systèmes d'exploitation. Par exemple, certaines polices de 
-                caractère sont installées par défaut sur Windows, mais pas sur Mac ou Linux. Cela peut nous causer d'énormes 
-                problèmes si nous essayons d'utiliser une police de caractère qui n'existe pas sur un système. Pour éviter ce 
+                Les polices de caractères varient énormément entre les systèmes d&apos;exploitation. Par exemple, certaines polices de 
+                caractère sont installées par défaut sur Windows, mais pas sur Mac ou Linux. Cela peut nous causer d&apos;énormes 
+                problèmes si nous essayons d&apos;utiliser une police de caractère qui n&apos;existe pas sur un système. Pour éviter ce 
                 genre de situation, il est impératif que vous spécifiez une police de caractère plus génériques dans votre liste 
                 de police.
             </ColoredBox>
             <p>
-                Voici un exemple de l'utilisation de la propriété <IC>font-family</IC>:
+                Voici un exemple de l&apos;utilisation de la propriété <IC>font-family</IC>:
             </p>
             <WebExample>
                 <Code language="html">{familyHtml}</Code>

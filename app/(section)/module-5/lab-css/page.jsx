@@ -37,16 +37,16 @@ export default function Page() {
                         </li>
                         <li>
                             Les polices de caractère peuvent être trouvé sur Google Fonts. Pour les titres, on utilise <a href="https://fonts.google.com/specimen/Kanit" target="_blank">Kanit</a> et 
-                            pour le texte régulier, c'est <a href="https://fonts.google.com/specimen/Roboto" target="_blank">Roboto</a>.
+                            pour le texte régulier, c&apos;est <a href="https://fonts.google.com/specimen/Roboto" target="_blank">Roboto</a>.
                         </li>
                         <li>
-                            Les espacements peuvent être approximatifs, mais essayez d'être le plus similaire possible à l'image ci-dessous.
+                            Les espacements peuvent être approximatifs, mais essayez d&apos;être le plus similaire possible à l&apos;image ci-dessous.
                         </li>
                         <li>
                             La largeur du <IC>&lt;h1&gt;</IC> est de <IC>15rem</IC>.
                         </li>
                         <li>
-                            Notez bien l'alignement du texte dans les <IC>&lt;th&gt;</IC>.
+                            Notez bien l&apos;alignement du texte dans les <IC>&lt;th&gt;</IC>.
                         </li>
                     </ul>
                 </li>

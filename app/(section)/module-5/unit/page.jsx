@@ -14,12 +14,12 @@ export const metadata = {
 export default function Page() {
     return <>
         <section>
-            <h2>Type d'unités</h2>
+            <h2>Type d&apos;unités</h2>
             <p>
-                Il existe 2 sortent d'unités de mesures en CSS, soit les unités de mesures absolues et les unités de mesures
+                Il existe 2 sortent d&apos;unités de mesures en CSS, soit les unités de mesures absolues et les unités de mesures
                 relative. Nous utiliserons ces unités de mesures majoritairement dans les propriétés CSS permettant de modifier
-                la taille ou l'espacement des éléments HTML. Si la page suivante ne satisfait pas votre curiosité sur les unités
-                possible en CSS, vous pouvez trouver plus d'information sur la page web suivante:
+                la taille ou l&apos;espacement des éléments HTML. Si la page suivante ne satisfait pas votre curiosité sur les unités
+                possible en CSS, vous pouvez trouver plus d&apos;information sur la page web suivante:
             </p>
             <p>
                 <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units" target="_blank">
@@ -31,10 +31,10 @@ export default function Page() {
         <section>
             <h2>Unités relatives</h2>
             <p>
-                Une unité de mesure relative est toujours dépendante d'une autre mesure. C'est généralement le type d'unités de
+                Une unité de mesure relative est toujours dépendante d&apos;une autre mesure. C&apos;est généralement le type d&apos;unités de
                 mesures que nous utiliserons dans nos pages Web. Il existe de nombreuses unitées de mesures relatives et elles
                 ne sont pas toutes relatives aux mêmes choses. Voici donc une liste de ces unités de mesure ainsi que de ce
-                qu'elle dépende.
+                qu&apos;elle dépende.
             </p>
             <OverflowContainer>
                 <table>
@@ -61,7 +61,7 @@ export default function Page() {
                                 équivalent à 16px.
                             </td>
                             <td>
-                                Utile pour les margins, padding, les grosses bordures, les dimensions d'un élément ou la taille du texte.
+                                Utile pour les margins, padding, les grosses bordures, les dimensions d&apos;un élément ou la taille du texte.
                             </td>
                         </tr>
                         <tr>
@@ -71,27 +71,27 @@ export default function Page() {
                                 propriété du parent.
                             </td>
                             <td>
-                                Utile pour les les dimensions d'un élément.
+                                Utile pour les les dimensions d&apos;un élément.
                             </td>
                         </tr>
                         <tr>
                             <td>vw</td>
                             <td>
-                                Mesure relative en fonction de la largeur du navigateur. C'est un pourcentage, donc 25vw indique 
+                                Mesure relative en fonction de la largeur du navigateur. C&apos;est un pourcentage, donc 25vw indique 
                                 25% de la largeur du navigateur.
                             </td>
                             <td>
-                                Utile pour la largeur d'un élément.
+                                Utile pour la largeur d&apos;un élément.
                             </td>
                         </tr>
                         <tr>
                             <td>vh</td>
                             <td>
-                                Mesure relative en fonction de la hauteur du navigateur. C'est un pourcentage, donc 75vh indique 
+                                Mesure relative en fonction de la hauteur du navigateur. C&apos;est un pourcentage, donc 75vh indique 
                                 75% de la hauteur du navigateur.
                             </td>
                             <td>
-                                Utile pour la hauteur d'un élément.
+                                Utile pour la hauteur d&apos;un élément.
                             </td>
                         </tr>
                     </tbody>
@@ -102,9 +102,9 @@ export default function Page() {
         <section>
             <h2>Unités absolue</h2>
             <p>
-                Une unité de mesures absolue ne dépend de rien. Elle spécifie une taille très spécifique à l'écran. Bien que
-                nous les utilisions de temps en temps, il n'est pas vraiment recommander de les utiliser puisque aujourd'hui,
-                les tailles d'écrans varient beaucoup. En effet, si vous utilisez une taille absolue sur un écran d'ordinateur
+                Une unité de mesures absolue ne dépend de rien. Elle spécifie une taille très spécifique à l&apos;écran. Bien que
+                nous les utilisions de temps en temps, il n&apos;est pas vraiment recommander de les utiliser puisque aujourd&apos;hui,
+                les tailles d&apos;écrans varient beaucoup. En effet, si vous utilisez une taille absolue sur un écran d&apos;ordinateur
                 ou sur un téléphone cellulaire, une marge de 30 pixels peut être très différente. Voici tout de même quelques
                 unités de mesures absolues:
             </p>
@@ -126,22 +126,22 @@ export default function Page() {
                         <tr>
                             <td>mm</td>
                             <td>Mesure en millimètre</td>
-                            <td>Utilisé pour l'impression de page web sur papier.</td>
+                            <td>Utilisé pour l&apos;impression de page web sur papier.</td>
                         </tr>
                         <tr>
                             <td>cm</td>
                             <td>Mesure en centimètre</td>
-                            <td>Utilisé pour l'impression de page web sur papier.</td>
+                            <td>Utilisé pour l&apos;impression de page web sur papier.</td>
                         </tr>
                         <tr>
                             <td>in</td>
                             <td>Mesure en pouces</td>
-                            <td>Utilisé pour l'impression de page web sur papier.</td>
+                            <td>Utilisé pour l&apos;impression de page web sur papier.</td>
                         </tr>
                         <tr>
                             <td>pt</td>
                             <td>Mesure en points</td>
-                            <td>Utilisé pour l'impression de page web sur papier.</td>
+                            <td>Utilisé pour l&apos;impression de page web sur papier.</td>
                         </tr>
                     </tbody>
                 </table>
@@ -151,10 +151,10 @@ export default function Page() {
         <section>
             <h2>Unités les plus fréquente</h2>
             <p>
-                Bien qu'il y ait de nombreuses unités de mesures, nous utiliseront généralement toujours les quelques mêmes. 
-                Certaines unités de mesure seront pratiquement jamais utilisé. C'est le cas 
-                du <IC>mm</IC>, <IC>cm</IC>, <IC>in</IC> et <IC>pt</IC> puisqu'ils sont majoritairement utilisé pour 
-                l'impression. Parmi les autres, on utilisera majoritairement le <IC>px</IC> et le <IC>rem</IC>. Pour les très 
+                Bien qu&apos;il y ait de nombreuses unités de mesures, nous utiliseront généralement toujours les quelques mêmes. 
+                Certaines unités de mesure seront pratiquement jamais utilisé. C&apos;est le cas 
+                du <IC>mm</IC>, <IC>cm</IC>, <IC>in</IC> et <IC>pt</IC> puisqu&apos;ils sont majoritairement utilisé pour 
+                l&apos;impression. Parmi les autres, on utilisera majoritairement le <IC>px</IC> et le <IC>rem</IC>. Pour les très 
                 petites valeurs, on utilise le <IC>px</IC>. Autrement, on préfèrera le <IC>rem</IC>.
             </p>
             <p>
