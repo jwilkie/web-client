@@ -6,7 +6,7 @@ import { Code, WebExample } from '@/components/WebExample';
  */
 export const metadata = {
     title: "Mettre le footer en bas",
-    description: "Présentation d'un technique CSS pour forcer le footer en bas de la page lorsque le contenu n'est pas assez grand.",
+    description: "Présentation d'une technique CSS pour forcer le footer en bas de la page lorsque le contenu n'est pas assez grand.",
     keywords: ["css", "footer", "espace", "flex", "bas", "bottom"],
     group: "hack"
 }

@@ -12,8 +12,8 @@ import css3 from '@/public/img/css-choco-3.jpg';
  */
 export const metadata = {
     title: "Laboratoire - Mise en page",
-    description: "",
-    keywords: [],
+    description: "Présentation du laboratoire sur la mise en page avec l'affichage en flex.",
+    keywords: ["css", "flex", "layout", "display"],
     group: "labs"
 }
 
