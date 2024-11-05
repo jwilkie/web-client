@@ -34,7 +34,7 @@ export default function Page() {
             <p>
                 Les commentaires en Javascript sont des portions de texte qui sont ignorées par l&apos;engin exécutant le code. Ils sont
                 utilisés pour documenter le code ou expliquer des portions de code. Comme en Java et en C#, les commentaires en sont 
-                fait avec <IC>//</IC> pour les commentaires en ligne et <IC>/* */</IC> pour les commentaires multilignes. Voici un exemple:
+                fait avec <IC>{'//'}</IC> pour les commentaires en ligne et <IC>{'/* */'}</IC> pour les commentaires multilignes. Voici un exemple:
             </p>
             <CodeBlock language="js">{comment}</CodeBlock>
             <p>
