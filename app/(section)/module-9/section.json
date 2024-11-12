@@ -1,8 +1,9 @@
 {
-    "title": "Objets et fonctions en Javascript",
-    "description": "Présentation des fonctions et des objets en Javascript qui sont bien différents des langages de programmation que vous connaissez déjà par le fait que Javascript est un langage fonctionnel.",
-    "disabled": true,
+    "title": "Objets, fonctions et modules en Javascript",
+    "description": "Présentation des fonctions, des objets et des modules en Javascript. Ils sont des concepts bien différents des langages de programmation que vous connaissez déjà par le fait que Javascript est un langage fonctionnel.",
     "pages": [
-
+        "fonction",
+        "objet",
+        "module"
     ]
 }
