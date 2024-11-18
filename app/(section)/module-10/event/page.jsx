@@ -182,7 +182,7 @@ export default function Page() {
                 Dans l&apos;exemple précédent, vous noterez que la fonction <IC>toucheAppuyee</IC> prend un paramètre <IC>event</IC>.
                 Ce paramètre est en fait un objet qui contient des informations sur l&apos;évènement qui s&apos;est produit, comme la 
                 touche qui a été appuyée dans ce cet exemple. Tous les évènements Javascript passent un objet <IC>event</IC> à la 
-                fonction qui les écoute. C'est au programmeur de décidé s&apos;il veut utiliser cet objet ou non. Dans cet objet, 
+                fonction qui les écoute. C&apos;est au programmeur de décidé s&apos;il veut utiliser cet objet ou non. Dans cet objet, 
                 vous trouverez entres autres les éléments suivants:
             </p>
             <ul>

@@ -161,7 +161,7 @@ export default function Page() {
             <h2>Modifier le texte</h2>
             <p>
                 Pour modifier le texte d&apos;un élément HTML, la propriété à changer est <IC>innerText</IC>. Cette propriété contient
-                le texte affiché à l&apos;écran par l&apos;élément. À l'aide de cette propriété, nous pouvons lire et changer le texte
+                le texte affiché à l&apos;écran par l&apos;élément. À l&apos;aide de cette propriété, nous pouvons lire et changer le texte
                 d&apos;un élément. Voici un exemple:
             </p>
             <WebExample>
@@ -169,7 +169,7 @@ export default function Page() {
                 <Code language="js">{texteJs}</Code>
             </WebExample>
             <ColoredBox title="À noter">
-                Vous remarquerez ici l'&apos;utilisation de la fonction <IC>preventDefault()</IC>. En exécutant cette fonction, nous 
+                Vous remarquerez ici l&apos;utilisation de la fonction <IC>preventDefault()</IC>. En exécutant cette fonction, nous 
                 nous assurons que le formulaire ne rafraîchira pas la page lorsqu&apos;il est soumis.
             </ColoredBox>
         </section>
