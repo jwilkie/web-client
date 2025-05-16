@@ -6,8 +6,9 @@
         "flex",
         "position",
         "wrapper",
-        "footer",
+        "space-between",
         "center",
+        "footer",
         "lab-layout"
     ]
 }
