@@ -3,6 +3,7 @@ import vsdark from 'react-syntax-highlighter/dist/cjs/styles/prism/vsc-dark-plus
 import html from 'react-syntax-highlighter/dist/cjs/languages/prism/markup'
 import css from 'react-syntax-highlighter/dist/cjs/languages/prism/css'
 import js from 'react-syntax-highlighter/dist/cjs/languages/prism/javascript'
+import bash from 'react-syntax-highlighter/dist/cjs/languages/prism/bash'
 
 const appConfig = {
     domain: 'https://jwilkie.github.io/web-client',
@@ -12,7 +13,8 @@ const appConfig = {
         languages: {
             'html': { tag: 'HTML', renderer: html },
             'css': { tag: 'CSS', renderer: css },
-            'js': { tag: 'Javascript', renderer: js }
+            'js': { tag: 'Javascript', renderer: js },
+            'console': { tag: 'Console', renderer: bash }
         },
         themes: {
             light: vs,
