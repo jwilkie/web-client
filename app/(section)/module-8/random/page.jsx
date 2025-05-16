@@ -1,6 +1,5 @@
 import CodeBlock from '@/components/CodeBlock';
 import IC from '@/components/InlineCode';
-import { Code, WebExample } from '@/components/WebExample';
 
 /**
  * @type {import("next").Metadata}
