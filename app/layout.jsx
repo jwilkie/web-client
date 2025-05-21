@@ -1,16 +1,16 @@
 import { Comfortaa, Montserrat, Open_Sans } from 'next/font/google'
-import Providers from './Providers'
+import { ThemeProvider } from 'next-themes'
 import Header from '@/components/Header'
 import Footer from '@/components//Footer'
 import ClientLayout from '@/components/ClientLayout'
 import { getGroups } from '@/model/group'
 import { getSections } from '@/model/section'
-import { basePath } from '@/next.config'
 
 import 'normalize.css/normalize.css'
 import '@/styles/globals.css'
 import '@/styles/themes.css'
 import styles from './layout.module.css'
+import appConfig from '@/app.config'
 
 const comfortaa = Comfortaa({
     subsets: ['latin'],
@@ -34,13 +34,24 @@ const opensans = Open_Sans({
 });
 
 /**
- * @returns {import('next').Metadata}
+ * @type {import('next').Metadata}
  */
-export function generateMetadata() {
-    return {
-        icons: {
-            icon: (basePath || '') + '/favicon.ico'
-        }
+export const metadata = {
+    metadataBase: new URL(appConfig.domain),
+    title: {
+        template: `%s | ${appConfig.title}`,
+        default: appConfig.title
+    },
+    openGraph: {
+        images: [
+            {
+                url: `./og.png`,
+                alt: appConfig.title,
+                type: 'image/png',
+                width: 1200,
+                height: 630
+            }
+        ]
     }
 }
 
@@ -48,15 +59,15 @@ export default async function RootLayout({ children }) {
     let sections = await getSections();
     let groups = await getGroups();
 
-    return <html lang="fr" className={`${comfortaa.variable} ${montserrat.variable} ${opensans.variable}`}>
+    return <html lang="fr" className={`${comfortaa.variable} ${montserrat.variable} ${opensans.variable}`} suppressHydrationWarning>
         <body className={styles.layout}>
-            <Providers>
+            <ThemeProvider>
                 <Header groups={groups} />
                 <ClientLayout sections={sections} groups={groups}>
                     {children}
                 </ClientLayout>
                 <Footer />
-            </Providers>
+            </ThemeProvider>
         </body>
     </html>
 }
