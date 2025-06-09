@@ -1,5 +1,6 @@
 {
     "label": "Aide-mémoire",
     "title": "Aide-mémoire",
-    "description": "Des liens vers chaque aide-mémoire présenté sur ce site."
+    "description": "Des liens vers chaque aide-mémoire présenté sur ce site.",
+    "noSection": true
 }

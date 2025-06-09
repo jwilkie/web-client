@@ -217,6 +217,12 @@ const cards = [
         </p>
     },
     {
+        title: '<caption>',
+        content: <p>
+            La légende d'un tableau. Elle est utilisée pour fournir un titre ou une description à un <IC>table</IC>. Elle doit être placée en premier, en haut, à l'intérieur de la balise <IC>table</IC>.
+        </p>
+    },
+    {
         title: '<form>',
         content: <p>
             Un formulaire. Il regroupe les balises d'entrée <IC>input</IC>, <IC>textarea</IC> ou <IC>select</IC> et les balises d'information comme les <IC>label</IC> qui forme un formulaire à soumettre.
