@@ -55,6 +55,12 @@ const cards = [
         </p>
     },
     {
+        title: 'enfant direct >',
+        content: <p>
+            Sélectionne les éléments qui sont des enfants directs d'un élément parent. Par exemple, <IC>.liste&nbsp;&gt;&nbsp;li&nbsp;{'{...}'}</IC> sélectionne uniquement les éléments <IC>&lt;li&gt;</IC> qui sont des enfants directs de l'élément <IC>.liste</IC>.
+        </p>
+    },
+    {
         title: ':hover',
         content: <p>
             Sélecteur conditionnel qui s'applique lorsque l'utilisateur survole un élément avec la souris. Par exemple, <IC>button:hover&nbsp;{'{...}'}</IC> applique le style aux boutons lorsque la souris est au-dessus.
@@ -69,7 +75,7 @@ const cards = [
     {
         title: ':checked',
         content: <p>
-            Sélecteur conditionnel qui s'applique aux éléments de formulaire qui sont cochés, comme les cases à cocher ou les boutons radio. Par exemple, <IC>input[type="checkbox"]:checked&nbsp;{'{...}'}</IC> sélectionne les cases à cocher qui sont cochées.
+            Sélecteur conditionnel qui s'applique aux éléments de formulaire qui sont cochés, comme les cases à cocher ou les boutons radio. Par exemple, <IC>input[type="checkbox"]</IC> <IC>:checked&nbsp;{'{...}'}</IC> sélectionne les cases à cocher qui sont cochées.
         </p>
     },
     {
