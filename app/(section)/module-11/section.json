@@ -4,6 +4,7 @@
     "pages": [
         "modify",
         "create",
-        "do-not-use"
+        "do-not-use",
+        "lab-carte-affaire"
     ]
 }

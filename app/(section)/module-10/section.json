@@ -4,6 +4,7 @@
     "pages": [
         "intro",
         "search",
-        "event"
+        "event",
+        "lab-recherche-js"
     ]
 }
