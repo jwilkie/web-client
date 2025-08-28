@@ -1,4 +1,5 @@
 {
+    "$schema": "../../../model/section.schema.json",
     "title": "Objets, fonctions et modules en Javascript",
     "description": "Présentation des fonctions, des objets et des modules en Javascript. Ils sont des concepts bien différents des langages de programmation que vous connaissez déjà par le fait que Javascript est un langage fonctionnel.",
     "pages": [

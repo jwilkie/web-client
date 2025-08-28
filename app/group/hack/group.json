@@ -1,4 +1,5 @@
 {
+    "$schema": "../../../model/group.schema.json",
     "label": "Hacks",
     "title": "Hacks",
     "description": "Des liens vers chaque technique particulère présenté sur ce site."

@@ -1,4 +1,5 @@
 {
+    "$schema": "../../../model/section.schema.json",
     "title": "Propriété CSS et outils",
     "description": "Présentation de certaines notions du CSS, tel que les styles de base et les unités de mesure. De plus, nous verrons une panoplie de propriété CSS qui manipulerons différentes parties de vos éléments, tel que le texte, les liste et les tableaux.",
     "pages": [
