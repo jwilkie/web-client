@@ -1,14 +1,16 @@
 {
     "$schema": "../../../model/section.schema.json",
-    "title": "Introduction au CSS",
-    "description": "Une introduction au design de page Web avec CSS. Nous verrons comment manipuler la couleur de différents éléments, changer la taille et l'espacement entre les éléments, ajouter des bordures ainsi que modifier l'affichage des élément. Le tout sera accompli en utilisant les sélecteurs CSS de base.",
+    "title": "Client Web et API",
+    "description": "Introduction aux concepts de client web et aux interactions avec des APIs. Nous apprendrons à utiliser Fetch pour envoyer et recevoir des données, à gérer les erreurs communes, et à déboguer les applications client-serveur.",
     "pages": [
         "intro",
-        "selector",
-        "color",
-        "space",
-        "border",
-        "display",
-        "center"
+        "fetch-intro",
+        "fetch-send",
+        "fetch-receive", 
+        "erreurs-communes",
+        "debugger-client",
+        "debugger-serveur",
+        "lab-liste-tache",
+        "lab-bibliotheque"
     ]
 }

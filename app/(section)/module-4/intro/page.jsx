@@ -1,95 +1,90 @@
 import IC from '@/components/InlineCode';
 import CodeBlock from '@/components/CodeBlock';
-import { FileExplorer, Folder, File } from '@/components/FileExplorer';
+import { WebExample, Code } from '@/components/WebExample';
+import ColoredBox from '@/components/ColoredBox';
 
 /**
  * @type {import("next").Metadata}
  */
 export const metadata = {
-    title: "Introduction au stylage",
-    description: "Présentation du CSS, le langage de stylage des pages web.",
-    keywords: ["css", "liaison", "lier", "link"],
+    title: "Introduction au Client Web et API",
+    description: "Introduction aux concepts de base des clients web et des interactions avec des APIs.",
+    keywords: ["web client", "api", "fetch", "http", "client-serveur"],
     group: "notes"
 }
-
-const link = 
-`...
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titre de page</title>
-
-    <!-- Fichier CSS -->
-    <link rel="stylesheet" href="/css/nom-de-fichier.css">
-</head>
-
-...`;
 
 export default function Page() {
     return <>
         <section>
-            <h2>Cascading Style Sheet</h2>
+            <h2>Qu'est-ce qu'un client web?</h2>
             <p>
-                Le CSS est un langage de style servant à décrire comment les éléments d&apos;une page HTML devrait être affiché. 
-                C&apos;est l&apos;un des 3 langages principal du Web, avec le HTML et le Javascript. Ce langage nous permettra de créer 
-                des &quot;feuilles de styles&quot; que nous pourrons appliquer à notre HTML pour le rendre plus beau. Nous commencerons 
-                donc à avoir des pages web beaucoup plus intéressantes et attrayantes.
+                Un client web est une application qui communique avec des serveurs pour obtenir ou envoyer des données. 
+                Les navigateurs web sont les clients web les plus courants, mais nous pouvons aussi créer nos propres 
+                clients web en utilisant JavaScript.
+            </p>
+            <p>
+                Dans ce module, nous explorerons comment créer des applications JavaScript qui interagissent avec des 
+                serveurs et des APIs (Application Programming Interfaces) pour échanger des données.
             </p>
         </section>
 
         <section>
-            <h2>Création d&apos;un fichier CSS</h2>
+            <h2>APIs et services web</h2>
             <p>
-                Pour créer un fichier CSS, vous pouvez le faire comme pour un fichier HTML.
+                Une API (Application Programming Interface) est un ensemble de règles et de protocoles qui permettent 
+                à différentes applications de communiquer entre elles. Les APIs web utilisent généralement le protocole 
+                HTTP pour échanger des données au format JSON.
+            </p>
+            <ColoredBox title="Note importante">
+                Les APIs modernes utilisent principalement les méthodes HTTP suivantes:
+                <ul>
+                    <li><IC>GET</IC> - pour récupérer des données</li>
+                    <li><IC>POST</IC> - pour envoyer de nouvelles données</li>
+                    <li><IC>PUT</IC> - pour modifier des données existantes</li>
+                    <li><IC>DELETE</IC> - pour supprimer des données</li>
+                </ul>
+            </ColoredBox>
+        </section>
+
+        <section>
+            <h2>Communication client-serveur</h2>
+            <p>
+                La communication entre un client et un serveur suit généralement ce processus:
+            </p>
+            <ol>
+                <li>Le client envoie une requête HTTP au serveur</li>
+                <li>Le serveur traite la requête</li>
+                <li>Le serveur renvoie une réponse HTTP avec les données ou un message d'erreur</li>
+                <li>Le client traite la réponse reçue</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>JavaScript et Fetch API</h2>
+            <p>
+                En JavaScript moderne, nous utilisons l'API <IC>fetch()</IC> pour faire des requêtes HTTP vers des serveurs. 
+                Cette API nous permet de récupérer des données, d'envoyer des formulaires, et d'interagir avec des services 
+                web de manière asynchrone.
+            </p>
+            <p>
+                Dans les prochaines sections, nous verrons comment utiliser <IC>fetch()</IC> pour créer des applications 
+                web interactives qui communiquent avec des serveurs.
+            </p>
+        </section>
+
+        <section>
+            <h2>Ce que nous apprendrons</h2>
+            <p>
+                Dans ce module, nous couvrirons:
             </p>
             <ul>
-                <li>
-                    En créant un fichier texte dont vous renommez l&apos;extension à <IC>.css</IC> dans votre explorateur de fichier.
-                </li>
-                <li>
-                    En créant un fichier CSS directement à partir de votre éditeur de code.
-                </li>
+                <li>Les bases de l'API Fetch</li>
+                <li>Comment envoyer des données vers un serveur</li>
+                <li>Comment recevoir et traiter des données depuis un serveur</li>
+                <li>La gestion des erreurs communes</li>
+                <li>Le débogage des applications client et serveur</li>
+                <li>Des exercices pratiques avec des interfaces complètes</li>
             </ul>
-            <p>
-                Peu importe de quelle façon vous créez le fichier, vous devez le mettre dans le dossier <IC>css</IC> de votre 
-                projet Web. Cela nous permettra de garder notre code de façon plus organisée.
-            </p>
-            <FileExplorer>
-                <Folder name="nom-du-projet">
-                    <Folder name="assets"></Folder>
-                    <Folder name="css" highlight></Folder>
-                    <Folder name="js"></Folder>
-                    <File name="index.html"></File>
-                </Folder>
-            </FileExplorer>
-        </section>
-
-        <section>
-            <h2>Lier un fichier CSS</h2>
-            <p>
-                Une fois votre fichier CSS créé, nous ne pourrons pas immédiatement écrire du code dedans. En effet, il va falloir 
-                d&apos;abords indiquer à notre page HTML d&apos;utiliser ce nouveau fichier CSS. Pour ce faire, rendez vous dans le fichier 
-                HTML que vous voulez lier avec votre nouveau fichier CSS et ajouter la balise <IC>&lt;link&gt;</IC> dans la 
-                balise <IC>&lt;head&gt;</IC> de la page.
-            </p>
-            <CodeBlock language="html">{link}</CodeBlock>
-            <dl>
-                <dt><IC>rel</IC></dt>
-                <dd>
-                    Indique la relation entre le document lié et ce fichier HTML. Dans le cas du CSS, nous le mettrons toujours à 
-                    &quot;stylesheet&quot;.
-                </dd>
-                <dt><IC>href</IC></dt>
-                <dd>
-                    Indique le chemin vers le fichier CSS que nous désirons lier. Nous utiliserons généralement un chemin relatif 
-                    qui pointe dans notre dossier <IC>css</IC>.
-                </dd>
-            </dl>
-            <p>
-                Dans les pages suivantes, nous verrons comment écrire le code CSS pour permettre à notre navigateur d&apos;afficher 
-                de plus belle pages.
-            </p>
         </section>
     </>
 }
