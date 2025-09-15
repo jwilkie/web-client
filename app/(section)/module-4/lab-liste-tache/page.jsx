@@ -10,7 +10,7 @@ export const metadata = {
     title: "Laboratoire - Liste de tâches avec interface",
     description: "Exercice pratique pour créer une application de liste de tâches complète avec interface utilisateur interactive.",
     keywords: ["laboratoire", "exercice", "todo", "liste", "tâches", "interface", "crud"],
-    group: "lab"
+    group: "labs"
 }
 
 const htmlStructure = 

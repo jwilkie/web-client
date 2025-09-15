@@ -10,7 +10,7 @@ export const metadata = {
     title: "Laboratoire - La bibliothèque avec interface",
     description: "Exercice pratique avancé pour créer une application de gestion de bibliothèque avec interface complète et API.",
     keywords: ["laboratoire", "exercice", "bibliothèque", "livres", "interface", "api", "crud"],
-    group: "lab"
+    group: "labs"
 }
 
 const htmlStructure = 
