@@ -1,4 +1,5 @@
 import IC from '@/components/InlineCode';
+import KK from '@/components/KeyboardKey';
 import { WebExample, Code } from '@/components/WebExample';
 import ColoredBox from '@/components/ColoredBox';
 
@@ -159,7 +160,7 @@ export default function Page() {
             </WebExample>
             <ColoredBox title="Attention: ">
                 La boîte de choix multiples utilise principalement le fait que le l&apos;on peut cliquer et glisser dans celle-ci. De plus, 
-                elle utilise abondamment les touches du clavier <kbd>Shift</kbd> et <kbd>Ctrl</kbd> pour sélectionner ou désélectionner 
+                elle utilise abondamment les touches du clavier <KK>Shift</KK> et <KK>Ctrl</KK> pour sélectionner ou désélectionner 
                 un ou plusieurs éléments, ce qui n&apos;est pas très intuitif. Bref, puisque cette façon de faire n&apos;est pas très facile à 
                 comprendre et à utiliser sur appareil mobile, on préfèrera généralement utiliser les checkboxes.
             </ColoredBox>

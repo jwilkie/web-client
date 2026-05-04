@@ -1,5 +1,6 @@
 import CardLayout from '@/components/CardLayout';
 import IC from '@/components/InlineCode';
+import KK from '@/components/KeyboardKey';
 
 /**
  * @type {import("next").Metadata}
@@ -311,7 +312,7 @@ const cards = [
     {
         title: '<kbd>',
         content: <p>
-            Une entrée au clavier. Elle est utilisée pour indiquer une touche, comme <kbd>A</kbd> ou encore <kbd>Échap</kbd>, ou une combinaison de touches à utiliser, comme <kbd>Ctrl + C</kbd> pour copier.
+            Une entrée au clavier. Elle est utilisée pour indiquer une touche, comme <KK>A</KK> ou encore <KK>Échap</KK>, ou une combinaison de touches à utiliser, comme <KK>Ctrl + C</KK> pour copier.
         </p>
     },
     {

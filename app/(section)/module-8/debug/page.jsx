@@ -1,4 +1,5 @@
 import IC from '@/components/InlineCode';
+import KK from '@/components/KeyboardKey';
 import CodeBlock from '@/components/CodeBlock';
 
 /**
@@ -56,8 +57,8 @@ export default function Page() {
                 les outils de développement de votre navigateur. Voici quelques façons de le faire: 
             </p>
             <ul>
-                <li>Appuyer sur <kbd>F12</kbd>.</li>
-                <li>Appuyer sur <kbd>Ctrl</kbd> + <kbd>Maj</kbd> + <kbd>I</kbd>.</li>
+                <li>Appuyer sur <KK>F12</KK>.</li>
+                <li>Appuyer sur <KK>Ctrl</KK> + <KK>Maj</KK> + <KK>I</KK>.</li>
                 <li>
                     Aller dans le menu du navigateur, dans &quot;Plus d&apos;outils&quot; et finalement dans &quot;Outils de développement&quot;
                 </li>
