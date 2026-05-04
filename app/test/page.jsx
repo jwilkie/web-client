@@ -9,6 +9,7 @@ import { Code, WebExample } from "@/components/WebExample";
 import YoutubeVideo from "@/components/YoutubeVideo";
 import { FileExplorer, Folder, File } from "@/components/FileExplorer";
 import Spoiler from "@/components/Spoiler";
+import KK from "@/components/KeyboardKey";
 
 import testImage from "@/public/img/e-cite.png";
 
@@ -101,7 +102,12 @@ export default function Page() {
         <section>
             <h2>Autre CSS Misc</h2>
             <div>
-                Keyboard Keys: <kbd>Ctrl</kbd> + <kbd>C</kbd>
+                Keyboard Keys: <KK>Ctrl</KK> + <KK>C</KK>
+            </div>
+            <div>
+                Mac Keys: <KK>
+                    <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M10 16v2.5c0 2.483-2.017 4.5-4.5 4.5-2.484 0-4.5-2.017-4.5-4.5 0-2.484 2.016-4.5 4.5-4.5h2.5v-4h-2.5c-2.484 0-4.5-2.016-4.5-4.5 0-2.483 2.016-4.5 4.5-4.5 2.483 0 4.5 2.017 4.5 4.5v2.5h4v-2.5c0-2.483 2.017-4.5 4.5-4.5 2.484 0 4.5 2.017 4.5 4.5 0 2.484-2.016 4.5-4.5 4.5h-2.5v4h2.5c2.484 0 4.5 2.016 4.5 4.5 0 2.483-2.016 4.5-4.5 4.5-2.483 0-4.5-2.017-4.5-4.5v-2.5h-4zm-2 0h-2.5c-1.379 0-2.5 1.122-2.5 2.5s1.121 2.5 2.5 2.5 2.5-1.122 2.5-2.5v-2.5zm10.5 0h-2.5v2.5c0 1.378 1.121 2.5 2.5 2.5s2.5-1.122 2.5-2.5-1.121-2.5-2.5-2.5zm-4.5-6h-4v4.132h4v-4.132zm-6-2v-2.5c0-1.378-1.121-2.5-2.5-2.5s-2.5 1.122-2.5 2.5 1.121 2.5 2.5 2.5h2.5zm10.5 0c1.379 0 2.5-1.122 2.5-2.5s-1.121-2.5-2.5-2.5-2.5 1.122-2.5 2.5v2.5h2.5z"/></svg>    
+                </KK> + <KK>C</KK>
             </div>
             <div>
                 Exponent: 3<sup>5</sup>, 2<sup>ème</sup>
